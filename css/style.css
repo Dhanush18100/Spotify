@@ -419,6 +419,7 @@ body {
     .cardContainer{
         max-height: unset;
         overflow-y: unset;
+        margin-bottom: 30vh;
         
     }
     .playbar{
@@ -438,7 +439,9 @@ body {
     .button>*{
         margin: 0 6px;
     }
-
+    .header{
+        padding: 7px;
+    }
     
 
     .spotifyPlaylist h1{
