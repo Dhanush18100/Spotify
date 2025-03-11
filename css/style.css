@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-:root{
-    --a:0;
+:root {
+    --a: 0;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -102,6 +103,7 @@ body {
     padding: 16px;
 
 }
+
 .spotifyPlaylist h1 {
     padding: 16px;
 
@@ -110,12 +112,12 @@ body {
 .cardContainer {
     margin: 30px;
     display: flex;
-   
+
     gap: 10px;
     flex-wrap: wrap;
     overflow-y: auto;
     max-height: 60vh;
-    
+
 
 }
 
@@ -127,10 +129,11 @@ body {
     position: relative;
     transform: all .9s;
 }
-.card:hover{
+
+.card:hover {
     background-color: rgb(105, 103, 103);
     cursor: pointer;
-    --a:1;
+    --a: 1;
 }
 
 .card>* {
@@ -200,6 +203,9 @@ body {
 }
 
 .playbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: fixed;
     bottom: 30px;
     width: 70vw;
@@ -246,7 +252,7 @@ body {
     width: 344px;
 }
 
-.info div{
+.info div {
     word-break: break-all;
 }
 
@@ -270,10 +276,11 @@ body {
     width: 98%;
     background: black;
     position: absolute;
-    bottom: 0;
+    bottom: 8px;
     border-radius: 10px;
     margin: 6px;
     cursor: pointer;
+
 }
 
 .circle {
@@ -291,7 +298,7 @@ body {
     cursor: pointer;
 }
 
-.timevol{
+.timevol {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -301,29 +308,28 @@ body {
     content: "Rise/Low" ;
 } */
 
-.songinfo
- {
+.songinfo {
     color: black;
     padding: 0 12px;
     width: 250px;
 }
 
-.songtime{
+.songtime {
     color: black;
     padding: 0 12px;
     width: 125px;
 }
 
 
-.volume{
+.volume {
     display: flex;
-   justify-content: center;
-   align-items: center;
-   gap: 12px;
-   cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
 }
 
-.range input{
+.range input {
     cursor: pointer;
 }
 
@@ -344,7 +350,8 @@ body {
     align-items: center;
     gap: 14px;
 }
-.close{
+
+.close {
     display: none;
 }
 
@@ -361,8 +368,14 @@ body {
         height: 100vh;
         background-color: black;
         padding: 0;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+
     }
-    .songinfo,.songtime{
+
+    .songinfo,
+    .songtime {
         width: auto;
     }
 
@@ -372,7 +385,8 @@ body {
         top: 25px;
         width: 29px;
     }
-    .timevol{
+
+    .timevol {
         justify-content: space-evenly;
         align-items: center;
         flex-direction: column;
@@ -380,7 +394,7 @@ body {
     }
 
     .right {
-        width: auto;
+        width: 100vw;
     }
 
     .playbar {
@@ -395,59 +409,79 @@ body {
     .seekbar {
         width: calc(100vw - 120px);
     }
-    .cardContainer{
+
+    .cardContainer {
         justify-content: center;
         margin: 0;
     }
-    .card{
-        width: 55px;
+
+    .card {
+        width: 55vw;
     }
-    .close{
+
+    .close {
         display: block;
     }
-    .right{
+
+    .right {
         margin: 0;
     }
-    .abovebar{
+
+    .abovebar {
         flex-direction: column;
         align-items: center;
         gap: 20px;
     }
+
     /* .cardContainer {
         max-height: 50vh;
     } */
-    .cardContainer{
+    .cardContainer {
         max-height: unset;
         overflow-y: unset;
         margin-bottom: 30vh;
-        
+
     }
-    .playbar{
+
+    .playbar {
         right: 25px;
+
     }
 
 }
-@media (max-width: 500px){
-    .card{
+
+@media (max-width: 500px) {
+    .card {
         width: 100%;
     }
 
-    .header>*{
+    .header>* {
         padding: 2px;
     }
 
-    .button>*{
+    .button>* {
         margin: 0 6px;
     }
-    .header{
+
+    .header {
         padding: 7px;
     }
-    
 
-    .spotifyPlaylist h1{
+
+    .spotifyPlaylist h1 {
         padding: 4px;
     }
 
-   
+
+    .library {
+        height: 85vh;
+    }
+    .left{
+        
+        width: 100vw;
+    }
+
+
+
 
 }
