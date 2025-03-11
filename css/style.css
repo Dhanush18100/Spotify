@@ -413,14 +413,38 @@ body {
         align-items: center;
         gap: 20px;
     }
-    .cardContainer {
+    /* .cardContainer {
         max-height: 50vh;
+    } */
+    .cardContainer{
+        max-height: unset;
+        overflow-y: unset;
+        
+    }
+    .playbar{
+        right: 25px;
     }
 
 }
 @media (max-width: 500px){
     .card{
-        width: auto;
+        width: 100%;
     }
+
+    .header>*{
+        padding: 2px;
+    }
+
+    .button>*{
+        margin: 0 6px;
+    }
+
+    
+
+    .spotifyPlaylist h1{
+        padding: 4px;
+    }
+
+   
 
 }
