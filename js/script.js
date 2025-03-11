@@ -49,7 +49,7 @@ async function getSongs(folder) {
                         </div>
                         <div class="playnow">
                         <span>Play Now</span>
-                        <img class="invert" src="playnow.svg" alt="">
+                        <img class="invert" src="img/playnow.svg" alt="">
                     </div>
         </li>`;
     }
@@ -70,7 +70,7 @@ const playMusic = (track, pause = false) => {
     // currentSong.play();
     if (!pause) {
         currentSong.play();
-        play.src = "pause.svg"
+        play.src = "img/pause.svg"
     }
     document.querySelector(".songinfo").innerHTML = decodeURI(track)
     document.querySelector(".songtime").innerHTML = "00:00 / 00:00"
@@ -143,10 +143,10 @@ async function main() {
     play.addEventListener("click", () => {
         if (currentSong.paused) {
             currentSong.play()
-            play.src = "pause.svg"
+            play.src = "img/pause.svg"
         } else {
             currentSong.pause()
-            play.src = "play.svg"
+            play.src = "img/play.svg"
 
         }
     })
