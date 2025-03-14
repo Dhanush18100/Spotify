@@ -155,10 +155,11 @@ body {
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 168px;
+    bottom: 88px;
     right: 17px;
     opacity: var(--a);
     transform: all 1s ease-out;
+
 }
 
 .button {
